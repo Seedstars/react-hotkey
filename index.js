@@ -34,7 +34,7 @@ var handlers = [];
  * Mixin that calls `handlerName` on your component if it is mounted and a
  * key event has bubbled up to the document
  */
-exports.Mixin = function HotkeyMixin(handlerName) {
+exports.mixin = function HotkeyMixin(handlerName) {
     return {
         componentDidMount: function() {
             var handler = this[handlerName];
